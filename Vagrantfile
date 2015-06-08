@@ -5,17 +5,21 @@
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
+
 Vagrant.configure(2) do |config|
+
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
+
   config.vm.box = "scientific-linux-6"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
+
   config.vm.box_url = "http://lyte.id.au/vagrant/sl6-64-lyte.box"
 
   # Create a forwarded port mapping which allows access to a specific port
@@ -36,7 +40,8 @@ Vagrant.configure(2) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+
+   config.vm.synced_folder "./required", "/required"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -63,14 +68,25 @@ Vagrant.configure(2) do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  # config.vm.provision "shell", inline: $install
+   
+    config.vm.provision "shell", inline: <<-SHELL
+ 
+    sudo su
+    
+    yum install -y nano.x86_64
+    #adds nano as editor
 
-  # $install
-  # yum install ...
-  # other code...
+    #curl -L http://install.perlbrew.pl | bash
+    #to upgrade to perl 5.18.4
+    #source ~/perl5/perlbrew/etc/bashrc
+    #to make perlbrew executable
+    #perlbrew install perl-5.18.4
+    #Adds latest version of perl, takes a while.
+    #perlbrew switch perl-5.18.4
 
-  #   sudo apt-get update
-  #   sudo apt-get install -y apache2
-  # SHELL
+    python ./required/get-pip.py    
+    pip install cutadapt
+
+    SHELL
+
 end
