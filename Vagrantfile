@@ -64,7 +64,8 @@ config.vm.box_url = "http://lyte.id.au/vagrant/sl6-64-lyte.box"
 # Enable provisioning with a shell script. Additional provisioners such as
 # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
 # documentation for more information about their specific syntax and use.
- 
+
+## Provisions ## 
 
 #adding modified .bash profile to synced directory; loads upon vagrant ssh
 config.vm.provision "file", source: "./.bash_profile", destination: ".bash_profile"
@@ -75,6 +76,12 @@ config.vm.provision "file", source: "./required/get-pip.py", destination: "get-p
 #Usearch is a C binary file, no make oir install required. Moved executable to /bin below in shell provision
 config.vm.provision "file", source: "./required/usearch7.0.1090_i86linux32", destination: "usearch"
 
+#tarred files that are not always downloadable: connection refused.
+config.vm.provision "file", source: "./required/libgtextutils-0.6.tar.bz2", destination: "libgtextutils-0.6.tar.bz2"
+config.vm.provision "file", source: "./required/fastx_toolkit-0.0.12.tar.bz2", destination: "fastx_toolkit-0.0.12.tar.bz2"
+config.vm.provision "file", source: "./required/FLASH-1.2.11.tar.gz", destination: "FLASH-1.2.11.tar.gz"
+
+#Shell provision for majority of itagger dependencies
 config.vm.provision "shell", inline: <<-SHELL
 
 source .bash_profile
@@ -86,58 +93,53 @@ mv ./get-pip.py ./bin/get-pip.py
 chmod 755 ./bin/*
 
 # adds nano as editor
-# echo "Installing nano editor"
-# sudo yum install -y nano.x86_64
+sudo yum install -y nano.x86_64
 
 # adds devel version of python necessary for gcc compile of cutadapt
-# sudo yum install -y  python-devel.x86_64
+sudo yum install -y  python-devel.x86_64
 
+# Adds latest version of perlbrew and perl v5.18.4, takes a while.
 # curl -L http://install.perlbrew.pl | bash
-# to upgrade to perl 5.18.4
 # source ~/perl5/perlbrew/etc/bashrc
-# to make perlbrew executable
 # perlbrew install perl-5.18.4
-# Adds latest version of perl, takes a while.
 # perlbrew switch perl-5.18.4
 
- python ./bin/get-pip.py    
- #pip install cutadapt
+#installing pip, and then cutadapt
+python ./bin/get-pip.py    
+pip install cutadapt
 
-# installing fastx_toolkit : instructions from http://hannonlab.cshl.edu/fastx_toolkit/install_centos.txt
-# sudo yum install pkgconfig.x86_64 gcc.x86_64 gcc-c++.x86_64 wget.x86_64
-# wget http://cancan.cshl.edu/labmembers/gordon/files/libgtextutils-0.6.tar.bz2
-# tar -xjf libgtextutils-0.6.tar.bz2
-# cd libgtextutils-0.6
-# ./configure
-# make
-# sudo make install
-# cd ..
-# rm libgtextutils-0.6.tar.bz2
+# installing fastx_toolkit, and (first) it's dependencies : instructions from http://hannonlab.cshl.edu/fastx_toolkit/install_centos.txt
+#wget http://cancan.cshl.edu/labmembers/gordon/files/libgtextutils-0.6.tar.bz2
+#wget http://cancan.cshl.edu/labmembers/gordon/files/fastx_toolkit-0.0.12.tar.bz2 
+sudo yum install pkgconfig.x86_64 gcc.x86_64 gcc-c++.x86_64 wget.x86_64
+tar -xjf libgtextutils-0.6.tar.bz2
+cd libgtextutils-0.6
+./configure
+make
+sudo make install
+cd ..
+rm libgtextutils-0.6.tar.bz2
 
-# export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-# wget http://cancan.cshl.edu/labmembers/gordon/files/fastx_toolkit-0.0.12.tar.bz2 
-# tar -xjf fastx_toolkit-0.0.12.tar.bz2 
-# cd fastx_toolkit-0.0.12
-# ./configure
-# make
-# sudo make install
-# cd ..
-# rm fastx_toolkit-0.0.12.tar.bz2
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+tar -xjf fastx_toolkit-0.0.12.tar.bz2 
+cd fastx_toolkit-0.0.12
+./configure
+make
+sudo make install
+cd ..
+rm fastx_toolkit-0.0.12.tar.bz2
 
 # getting devel version of zlib for installing FLASH
-# sudo yum install -y zlib-devel.x86_64
+sudo yum install -y zlib-devel.x86_64
 
 # #getting FLASh 1.2.11
-# wget http://sourceforge.net/projects/flashpage/files/FLASH-1.2.11.tar.gz
-# tar xvfz FLASH-1.2.11.tar.gz
-# cd FLASH-1.2.11
-# make
-# cd ..
-# cp FLASH-1.2.11/flash bin/
-# rm FLASH-1.2.11.tar.gz
-
-
-
+# downloaded from http://sourceforge.net/projects/flashpage/files/FLASH-1.2.11.tar.gz
+tar xfz FLASH-1.2.11.tar.gz
+cd FLASH-1.2.11
+make
+cd ..
+cp FLASH-1.2.11/flash bin/
+rm FLASH-1.2.11.tar.gz
 
 SHELL
 
