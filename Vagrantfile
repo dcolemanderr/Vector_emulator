@@ -67,25 +67,66 @@ config.vm.box_url = "http://lyte.id.au/vagrant/sl6-64-lyte.box"
  
 
 
-config.vm.provision "file", source: "./required/get-pip.py", destination: "get-pip.py"
+#config.vm.provision "file", source: "./vagrant_bash_profile", destination: ".bash_profile"
 
+config.vm.provision "file", source: "./required/get-pip.py", destination: "get-pip.py"
 
 config.vm.provision "shell", inline: <<-SHELL
 
+source .bash_profile
+mkdir bin
+
+# adds nano as editor
+# echo "Installing nano editor"
 sudo yum install -y nano.x86_64
-sudo yum install -y  python-devel.x86_64
-#adds nano as editor
 
-#curl -L http://install.perlbrew.pl | bash
-#to upgrade to perl 5.18.4
-#source ~/perl5/perlbrew/etc/bashrc
-#to make perlbrew executable
-#perlbrew install perl-5.18.4
-#Adds latest version of perl, takes a while.
-#perlbrew switch perl-5.18.4
+# adds devel version of python necessary for gcc compile of cutadapt
+# sudo yum install -y  python-devel.x86_64
 
-python get-pip.py    
-pip install cutadapt
+# curl -L http://install.perlbrew.pl | bash
+# to upgrade to perl 5.18.4
+# source ~/perl5/perlbrew/etc/bashrc
+# to make perlbrew executable
+# perlbrew install perl-5.18.4
+# Adds latest version of perl, takes a while.
+# perlbrew switch perl-5.18.4
+
+# python get-pip.py    
+# pip install cutadapt
+
+# installing fastx_toolkit : instructions from http://hannonlab.cshl.edu/fastx_toolkit/install_centos.txt
+# sudo yum install pkgconfig.x86_64 gcc.x86_64 gcc-c++.x86_64 wget.x86_64
+# wget http://cancan.cshl.edu/labmembers/gordon/files/libgtextutils-0.6.tar.bz2
+# tar -xjf libgtextutils-0.6.tar.bz2
+# cd libgtextutils-0.6
+# ./configure
+# make
+# sudo make install
+# cd ..
+# rm libgtextutils-0.6.tar.bz2
+
+# export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+# wget http://cancan.cshl.edu/labmembers/gordon/files/fastx_toolkit-0.0.12.tar.bz2 
+# tar -xjf fastx_toolkit-0.0.12.tar.bz2 
+# cd fastx_toolkit-0.0.12
+# ./configure
+# make
+# sudo make install
+# cd ..
+# rm fastx_toolkit-0.0.12.tar.bz2
+
+#getting devel version of zlib for installing FLASH
+sudo yum install -y zlib-devel.x86_64
+
+#getting flash 1.2.11
+wget http://sourceforge.net/projects/flashpage/files/FLASH-1.2.11.tar.gz
+tar xvfz FLASH-1.2.11.tar.gz
+cd FLASH-1.2.11
+make
+cd ..
+cp FLASH-1.2.11/flash bin/
+rm FLASH-1.2.11.tar.gz
+
 
 SHELL
 
