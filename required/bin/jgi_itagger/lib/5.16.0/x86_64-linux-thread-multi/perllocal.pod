@@ -1,0 +1,990 @@
+=head2 Thu Oct  3 15:24:24 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Fri Oct  4 01:14:22 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Wed Oct  9 15:26:04 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Mon Oct 14 22:43:54 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Tue Oct 15 17:18:40 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Fri Dec  6 18:22:24 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Fri Dec  6 18:36:34 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Wed Dec 11 18:10:36 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Fri Dec 13 15:53:00 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Fri Dec 13 15:55:33 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Mon Dec 16 12:46:13 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Mon Dec 16 19:18:21 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Mon Dec 16 19:29:14 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Mon Dec 16 19:46:33 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAbundanceThreshold.pl scripts/itaggerAnalyzeReplicates.pl scripts/itaggerBinByLength.pl scripts/itaggerClassifyFastaReads.pl scripts/itaggerClustering.pl scripts/itaggerDiversity.pl scripts/itaggerDummyObsTable.pl scripts/itaggerGetGenbankAnnotation.pl scripts/itaggerHPSSBackup.pl scripts/itaggerMakeRDP.pl scripts/itaggerMappingFileFiltering.pl scripts/itaggerMergeOTUTables.pl scripts/itaggerNormalizeOTUs.pl scripts/itaggerOTUHeatMap.pl scripts/itaggerParallelRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerPlotAlphaDiv.pl scripts/itaggerPreprocess454.pl scripts/itaggerProcrustes.pl scripts/itaggerQscorePlots.pl scripts/itaggerQscoreSheets.pl scripts/itaggerRarefaction.pl scripts/itaggerReadQC.pl scripts/itaggerRunHPSSBackup.pl scripts/itaggerRunHPSSBackup.sh scripts/itaggerStats.pl scripts/itaggerTxtToPdf.pl>
+
+=back
+
+=head2 Tue Dec 17 18:33:28 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Wed Dec 18 18:06:03 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Dec 20 15:06:35 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Dec 20 15:08:24 2013: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Feb 21 13:23:25 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Feb 21 13:40:02 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Feb 21 13:54:19 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Feb 21 14:58:09 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Feb 21 15:02:28 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Feb 21 15:19:18 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Feb 21 17:03:38 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Mon Feb 24 17:06:53 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri Mar  7 15:50:52 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri May 23 15:51:45 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Tue May 27 23:17:11 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Fri May 30 16:51:48 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Mon Jun  2 14:01:44 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Tue Jun 10 15:53:08 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Wed Jun 11 12:14:37 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Wed Jul  9 19:27:32 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl>
+
+=back
+
+=head2 Tue Nov 18 21:09:02 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Wed Nov 19 15:14:50 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Tue Nov 25 16:51:00 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Tue Nov 25 18:10:06 2014: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Thu Jan  8 17:32:58 2015: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Tue Jan 27 18:06:54 2015: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Wed Jan 28 16:55:25 2015: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Thu Feb 12 10:39:53 2015: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Tue Feb 24 10:26:48 2015: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerGetQcReadsForPicrust.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Mon Mar  2 15:36:01 2015: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerGetQcReadsForPicrust.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+
+=head2 Wed Mar  4 16:46:37 2015: C<Module> L<FastaDb|FastaDb>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/common/jgi/pkmeco/itagger/dev/lib/site_perl/5.16.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.3>
+
+=item *
+
+C<EXE_FILES: scripts/itagger.pl scripts/itagger.sh scripts/itaggerAddTaxToSeqobs.pl scripts/itaggerGetQcReadsForPicrust.pl scripts/itaggerMakeRDP.pl scripts/itaggerPhylumBarplot.pl scripts/itaggerQscorePlots.pl scripts/itaggerRdpClassifier.pl>
+
+=back
+

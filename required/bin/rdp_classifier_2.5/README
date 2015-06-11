@@ -1,0 +1,75 @@
+RDP Classifier 2.5 README file
+Last update: 05/15/2012
+Author: Qiong Wang at wangqion@msu.edu
+	James R. Cole at colej@msu.edu
+	James M. Tiedje at tiedjej@msu.edu
+
+INTRODUCTION
+
+The RDP Classifier is a naive Bayesian classifier which was developed to provide rapid taxonomic placement based on rRNA sequence data. The RDP Classifier can rapidly and accurately classify bacterial 16s rRNA sequences into the new higher-order taxonomy proposed by Bergey's Trust. It provides taxonomic assignments from domain to genus, with confidence estimates for each assignment. The RDP Classifier is not limited to using the bacterial taxonomy proposed by the Bergey's Manual. It worked equally well when trained on the NCBI taxonomy. The RDP Classifier likely can be adapted to additional phylogenetically coherent bacterial taxonomies. The new updated RDP Classifier now works on Fungal LSU sequences. 
+
+How to cite Classifier? Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Na•ve Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+
+
+UPDATES:
+
+1. The hierarchy model for 16S rRNA has been updated to training set No. 9. Only minor rearrangements for Classifier training set No. 9 from No. 7. The updates include adding new class Negativicutes, order Selenomonadales and family Acidaminococcaceae to phylum Firmicutes, move family Veillonellaceae to order Selenomonadales.
+
+Fungal LSU Classifier (large subunit rRNA gene) hierarchy model and training set provided by Cheryl Kuske and colleagues remains unchanged. More details can be found on RDP website.
+
+2. The bootstrap assignment strategy has been changed to avoid over-predication problem when multiple genera are tied for highest score occurred during bootstrap trials. This happens when every sequence in multiple genera (say N) contains the same partial sequence. One of the genera will be randomly chosen from the list of N genera with the highest tie score. If the tie score occurred during the genus assignment deterministic step, the first genus will be chosen. In this way, the genus assignment will remain deterministic but the bootstrap score will be close to 1/N .
+
+3. By default, the Classifier output the results for all ranks applied for each sequence. Some users found the format "fixrank" useful to load into third party analysis tools. The output for format "fixrank" has been slightly changed in this version. The Classifier now outputs the results in the following rank order: domain, phylum, class, order, family and genus. In case of missing ranks in the lineage, the bootstrap value and the taxon name from the immediate lower rank will be reported. This eliminates the gaps in the lineage, but also introduces non-existing taxon name and rank. User should interpret the "fixrank" results with caution.
+
+4. The package rdp_classifier-2.5.jar introduces a new command line parameter "minWords" to allow user specify the minimum number of words used for each bootstrap trial. By default the Classifier chooses a subset of 1/8 of all the possible overlapping words from the query sequence for each bootstrap trial. The Classifier uses the minWords if the minWords is larger than 1/8 of words. Choosing more words helps gaining higher bootstrap values for short query sequence. The run time of the Classifier is proportional to the number and the length of the query sequences. Using larger "minWords" will increase the run time proportionally. 
+
+
+HIGHLIGHTS:
+
+1. The RDP classifier allows classification of both bacterial and archaeal 16S rRNA sequences, and Fungal LSU sequences. Both trained models are included this package (rdp_classifier-2.5.jar). It is based on the nomenclatural taxonomy and Bergey's Manual, with additional major rearrangements that have been proposed for the Firmicutes and Cyanobacteria. It also includes published informal classifications for well-defined lineage with few cultivated members, such as Acidobacteria, Verrucomicrobia and OP11. Additional information for the classification of chloroplasts, Korarchaeota, and Nanoarchaeum were taken from the NCBI taxonomy. 
+
+2. An important feature introduced since release 2.3 is the command line class to do leave-one-out testing from the training taxonomy and sequences. This is extremely useful for users who want to train the Classifier using their own taxonomy. It reports classification accuracy rate at each rank. It also reports the misclassified sequences which help users to easily identify the errors in their underline taxonomy. 
+
+3. An extended package, RDP MultiClassifier is also available from Sourceforge. It uses RDP naive Bayesian Classifier to classify multiple samples at the same time. It provides more output formats that are ready to be loaded into third party analysis tools.
+
+4. The minimum sequence length is remained to be 50 bases due to short reads produced by pyrosequencing technique.  The online version of the Classifier and LibCompare and more help are available on RDP website: http://rdp.cme.msu.edu/.
+
+
+FILES included in this package
+
+COPYRIGHT
+                   
+rdp_classifier-2.5.jar
+  The compiled RDP Classifier preconfigured with 16S rRNA training data No. 9 and Fungal LSU training data No. 1 (see above).
+  There are four command line classes:
+ 
+  A command line class to do the classification. It can use either the default trained data or user specified data.
+	java -Xmx1g -jar rdp_classifier-2.5.jar
+	ex: java -Xmx1g -jar /PATH/rdp_classifier-2.5.jar 
+
+  A command line class to do the library comparison between two input files. 
+	java -Xmx1g -cp /PATH/rdp_classifier-2.5.jar  edu/msu/cme/rdp/classifier/comparison/ComparisonCmd	
+
+  A command line class to do leave-one-out testing from the training data, see sampledata/README for more details.
+	java -Xmx1g -cp /PATH/rdp_classifier-2.5.jar  edu/msu/cme/rdp/classifier/train/validation/leaveoneout/LeaveOneOutTesterMain
+
+  A command line class to retrain the Classifier using the your training data. The format of the raw data can be found in sampledata directory.
+	java -Xmx1g -cp /PATH/rdp_classifier-2.5.jar edu/msu/cme/rdp/classifier/train/ClassifierTraineeMaker
+
+sampledata/ 
+  A detailed README file about how to test, train the classifier using your training data and classify using your data.
+  Sample raw training data files (testTaxonForQuerySeq.txt and testQuerySeq.fasta)
+  and sample property file (rRNAClassifier.properties) 
+
+docs/index.html
+  The java documents.
+
+source/
+  The source code and junit test code.
+
+lib/
+  Other libraries used by this package.
+	ReadSeq.jar	
+	commons-cli.jar	
+	junit.jar	
+	
