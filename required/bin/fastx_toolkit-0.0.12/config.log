@@ -27,15 +27,13 @@ uname -v = #1 SMP Thu Nov 21 13:35:52 CST 2013
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /root/perl5/perlbrew/bin
+PATH: /root/perl5/perlbrew/perls/perl-5.18.4/bin
 PATH: /usr/local/sbin
 PATH: /sbin
 PATH: /bin
 PATH: /usr/sbin
 PATH: /usr/bin
-PATH: /root/bin
-PATH: /root/bin
-PATH: /root/lib
-PATH: /root/scripts
 PATH: /root/bin
 
 
@@ -599,15 +597,15 @@ pkg_cv_GTEXTUTILS_LIBS='-L/usr/local/lib -lgtextutils  '
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/vagrant/bin/fastx_toolkit-0.0.12/config/missing --run aclocal-1.10'
+ACLOCAL='${SHELL} /home/vagrant/required/bin/fastx_toolkit-0.0.12/config/missing --run aclocal-1.10'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
-AMTAR='${SHELL} /home/vagrant/bin/fastx_toolkit-0.0.12/config/missing --run tar'
+AMTAR='${SHELL} /home/vagrant/required/bin/fastx_toolkit-0.0.12/config/missing --run tar'
 AR='ar'
-AUTOCONF='${SHELL} /home/vagrant/bin/fastx_toolkit-0.0.12/config/missing --run autoconf'
-AUTOHEADER='${SHELL} /home/vagrant/bin/fastx_toolkit-0.0.12/config/missing --run autoheader'
-AUTOMAKE='${SHELL} /home/vagrant/bin/fastx_toolkit-0.0.12/config/missing --run automake-1.10'
+AUTOCONF='${SHELL} /home/vagrant/required/bin/fastx_toolkit-0.0.12/config/missing --run autoconf'
+AUTOHEADER='${SHELL} /home/vagrant/required/bin/fastx_toolkit-0.0.12/config/missing --run autoheader'
+AUTOMAKE='${SHELL} /home/vagrant/required/bin/fastx_toolkit-0.0.12/config/missing --run automake-1.10'
 AWK='gawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -645,7 +643,7 @@ LIPO=''
 LN_S='ln -s'
 LTLIBOBJS=''
 LT_LDFLAGS=''
-MAKEINFO='${SHELL} /home/vagrant/bin/fastx_toolkit-0.0.12/config/missing --run makeinfo'
+MAKEINFO='${SHELL} /home/vagrant/required/bin/fastx_toolkit-0.0.12/config/missing --run makeinfo'
 NM='/usr/bin/nm -B'
 NMEDIT=''
 OBJDUMP='objdump'
@@ -698,7 +696,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='$(SHELL) /home/vagrant/bin/fastx_toolkit-0.0.12/config/install-sh'
+install_sh='$(SHELL) /home/vagrant/required/bin/fastx_toolkit-0.0.12/config/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

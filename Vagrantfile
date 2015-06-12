@@ -84,30 +84,32 @@ config.vm.synced_folder "/Users/colemanderr/repo/test-sci-linux-vm/required", "/
 #Shell provision for majority of itagger dependencies
 config.vm.provision "shell", inline: <<-SHELL
 
+#replaces default .bash_profile loaded with vagrant ssh
+sudo mv ./required/.bash_profile ./
+
+#makes all dependencies executable
 chmod -R 755 /home/vagrant/required/*
 
-#cleanup from provisioned files
-# mkdir bin
-# mv ./usearch ./bin/usearch
-# mv ./get-pip.py ./bin/get-pip.py
-# chmod 755 ./bin/*
-
+## Editor ## 
 # adds nano as editor
 sudo yum install -y nano.x86_64
 
-# adds devel version of python necessary for gcc compile of cutadapt
-sudo yum install -y python-devel.x86_64
-
+## PERL ##
 # Adds latest version of perlbrew and perl v5.18.4, takes a while.
+export PERLBREW_ROOT=./required/bin/
 curl -L http://install.perlbrew.pl | bash
-source ~/perl5/perlbrew/etc/bashrc
+source ./required/bin/perl5/perlbrew/etc/bashrc
 perlbrew install perl-5.18.4
 perlbrew switch perl-5.18.4
 
+## Cutadapt ##
+# adds devel version of python necessary for gcc compile of cutadapt
+sudo yum install -y python-devel.x86_64
 #installing pip, and then cutadapt
 python /home/vagrant/required/bin/get-pip.py    
 pip install cutadapt
 
+## Fastx_toolkit ##
 # installing fastx_toolkit, and (first) it's dependencies : instructions from http://hannonlab.cshl.edu/fastx_toolkit/install_centos.txt
 # wget http://cancan.cshl.edu/labmembers/gordon/files/libgtextutils-0.6.tar.bz2
 # wget http://cancan.cshl.edu/labmembers/gordon/files/fastx_toolkit-0.0.12.tar.bz2 
@@ -117,29 +119,33 @@ cd /home/vagrant/required/bin/libgtextutils-0.6
 ./configure
 make
 sudo make install
-cd ..
+cd ~
 #rm libgtextutils-0.6.tar.bz2
-
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 #tar -xjf fastx_toolkit-0.0.12.tar.bz2 
 cd /home/vagrant/required/bin/fastx_toolkit-0.0.12
 ./configure
 make
 sudo make install
-cd ..
+cd ~
 #rm fastx_toolkit-0.0.12.tar.bz2
 
+## FLASH ##
 # getting devel version of zlib for installing FLASH
 sudo yum install -y zlib-devel.x86_64
-
 # #getting FLASh 1.2.11
 # downloaded from http://sourceforge.net/projects/flashpage/files/FLASH-1.2.11.tar.gz
 #tar xfz FLASH-1.2.11.tar.gz
 cd /home/vagrant/required/bin/FLASH-1.2.11
 make
-cd ..
-#cp FLASH-1.2.11/flash bin/
+sudo cp flash /usr/local/bin
+cd ~
 #rm FLASH-1.2.11.tar.gz
+
+## Java ##
+sudo yum install -y java-1.7.0-openjdk.x86_64
+
+
 
 SHELL
 

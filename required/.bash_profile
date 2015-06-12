@@ -17,12 +17,15 @@ PATH=$PATH:$HOME/scripts
 #PATH=$HOME/jgi_itagger/bin/:$PATH
 #PATH=$HOME/ActivePerl-5.18/bin/:$PATH
 
-#export PERL5LIB=/global/home/users/colemand/ActivePerl-5.18/lib/
+export PERL5LIB=/home/vagrant/required/bin/perl5/perlbrew/perls/perl-5.18.4/lib
 
 export PATH
 export TMPDIR=/global/scratch/
 export RDP_JAR_PATH=/required/rdp_classifier_2.5/rdp_classifier-2.5.jar
 #export EDITOR=/usr/bin/nano
+
+source /required/bin/perl5/perlbrew/etc/bashrc
+#in order to use perlbrew
 
 PATH=$PATH:$HOME/bin
 export PATH
