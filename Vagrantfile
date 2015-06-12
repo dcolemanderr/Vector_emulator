@@ -37,7 +37,7 @@ config.vm.box_url = "http://lyte.id.au/vagrant/sl6-64-lyte.box"
 # the path on the guest to mount the folder. And the optional third
 # argument is a set of non-required options.
 
-# config.vm.synced_folder "/Users/colemanderr/repo/test-sci-linux-vm/required/", "./required/"
+config.vm.synced_folder "/Users/colemanderr/repo/test-sci-linux-vm/required", "/home/vagrant/required"
 
 # Provider-specific configuration so you can fine-tune various
 # backing providers for Vagrant. These expose provider-specific options.
@@ -68,78 +68,78 @@ config.vm.box_url = "http://lyte.id.au/vagrant/sl6-64-lyte.box"
 ## Provisions ## 
 
 #adding modified .bash profile to synced directory; loads upon vagrant ssh
-config.vm.provision "file", source: "./.bash_profile", destination: ".bash_profile"
+#config.vm.provision "file", source: "./required/.bash_profile", destination: "/home/vagrant/.bash_profile"
 
 #getting required files for itagger that cannot be downloaded with wget or installed with yum 
-config.vm.provision "file", source: "./required/get-pip.py", destination: "get-pip.py"
+#config.vm.provision "file", source: "./required/get-pip.py", destination: "get-pip.py"
 
 #Usearch is a C binary file, no make oir install required. Moved executable to /bin below in shell provision
-config.vm.provision "file", source: "./required/usearch7.0.1090_i86linux32", destination: "usearch"
+#config.vm.provision "file", source: "./required/usearch7.0.1090_i86linux32", destination: "usearch"
 
 #tarred files that are not always downloadable: connection refused.
-config.vm.provision "file", source: "./required/libgtextutils-0.6.tar.bz2", destination: "libgtextutils-0.6.tar.bz2"
-config.vm.provision "file", source: "./required/fastx_toolkit-0.0.12.tar.bz2", destination: "fastx_toolkit-0.0.12.tar.bz2"
-config.vm.provision "file", source: "./required/FLASH-1.2.11.tar.gz", destination: "FLASH-1.2.11.tar.gz"
+#config.vm.provision "file", source: "./required/libgtextutils-0.6.tar.bz2", destination: "libgtextutils-0.6.tar.bz2"
+#config.vm.provision "file", source: "./required/fastx_toolkit-0.0.12.tar.bz2", destination: "fastx_toolkit-0.0.12.tar.bz2"
+#config.vm.provision "file", source: "./required/FLASH-1.2.11.tar.gz", destination: "FLASH-1.2.11.tar.gz"
 
 #Shell provision for majority of itagger dependencies
 config.vm.provision "shell", inline: <<-SHELL
 
-source .bash_profile
+chmod -R 755 /home/vagrant/required/*
 
 #cleanup from provisioned files
-mkdir bin
-mv ./usearch ./bin/usearch
-mv ./get-pip.py ./bin/get-pip.py
-chmod 755 ./bin/*
+# mkdir bin
+# mv ./usearch ./bin/usearch
+# mv ./get-pip.py ./bin/get-pip.py
+# chmod 755 ./bin/*
 
 # adds nano as editor
 sudo yum install -y nano.x86_64
 
 # adds devel version of python necessary for gcc compile of cutadapt
-sudo yum install -y  python-devel.x86_64
+sudo yum install -y python-devel.x86_64
 
 # Adds latest version of perlbrew and perl v5.18.4, takes a while.
-# curl -L http://install.perlbrew.pl | bash
-# source ~/perl5/perlbrew/etc/bashrc
-# perlbrew install perl-5.18.4
-# perlbrew switch perl-5.18.4
+curl -L http://install.perlbrew.pl | bash
+source ~/perl5/perlbrew/etc/bashrc
+perlbrew install perl-5.18.4
+perlbrew switch perl-5.18.4
 
 #installing pip, and then cutadapt
-python ./bin/get-pip.py    
+python /home/vagrant/required/bin/get-pip.py    
 pip install cutadapt
 
 # installing fastx_toolkit, and (first) it's dependencies : instructions from http://hannonlab.cshl.edu/fastx_toolkit/install_centos.txt
-#wget http://cancan.cshl.edu/labmembers/gordon/files/libgtextutils-0.6.tar.bz2
-#wget http://cancan.cshl.edu/labmembers/gordon/files/fastx_toolkit-0.0.12.tar.bz2 
+# wget http://cancan.cshl.edu/labmembers/gordon/files/libgtextutils-0.6.tar.bz2
+# wget http://cancan.cshl.edu/labmembers/gordon/files/fastx_toolkit-0.0.12.tar.bz2 
 sudo yum install pkgconfig.x86_64 gcc.x86_64 gcc-c++.x86_64 wget.x86_64
-tar -xjf libgtextutils-0.6.tar.bz2
-cd libgtextutils-0.6
+#tar -xjf libgtextutils-0.6.tar.bz2
+cd /home/vagrant/required/bin/libgtextutils-0.6
 ./configure
 make
 sudo make install
 cd ..
-rm libgtextutils-0.6.tar.bz2
+#rm libgtextutils-0.6.tar.bz2
 
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-tar -xjf fastx_toolkit-0.0.12.tar.bz2 
-cd fastx_toolkit-0.0.12
+#tar -xjf fastx_toolkit-0.0.12.tar.bz2 
+cd /home/vagrant/required/bin/fastx_toolkit-0.0.12
 ./configure
 make
 sudo make install
 cd ..
-rm fastx_toolkit-0.0.12.tar.bz2
+#rm fastx_toolkit-0.0.12.tar.bz2
 
 # getting devel version of zlib for installing FLASH
 sudo yum install -y zlib-devel.x86_64
 
 # #getting FLASh 1.2.11
 # downloaded from http://sourceforge.net/projects/flashpage/files/FLASH-1.2.11.tar.gz
-tar xfz FLASH-1.2.11.tar.gz
-cd FLASH-1.2.11
+#tar xfz FLASH-1.2.11.tar.gz
+cd /home/vagrant/required/bin/FLASH-1.2.11
 make
 cd ..
-cp FLASH-1.2.11/flash bin/
-rm FLASH-1.2.11.tar.gz
+#cp FLASH-1.2.11/flash bin/
+#rm FLASH-1.2.11.tar.gz
 
 SHELL
 
