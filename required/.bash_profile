@@ -12,21 +12,16 @@ export PS1="\u@\w > "
 
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/lib
-PATH=$PATH:$HOME/scripts
-#PATH=$PATH:$HOME/ActivePerl-5.18/lib/
-#PATH=$HOME/jgi_itagger/bin/:$PATH
-#PATH=$HOME/ActivePerl-5.18/bin/:$PATH
 
-export PERL5LIB=/home/vagrant/required/bin/perl5/perlbrew/perls/perl-5.18.4/lib
+#export PERL5LIB=/home/vagrant/required/bin/perlbrew/perls/perl-5.18.4/lib
+sudo su root 
+source /root/perl5/perlbrew/etc/bashrc
+exit
 
-export PATH
 export TMPDIR=/global/scratch/
 export RDP_JAR_PATH=/required/rdp_classifier_2.5/rdp_classifier-2.5.jar
+export PERLBREW_ROOT=/home/vagrant/required/perl5/perlbrew
 #export EDITOR=/usr/bin/nano
 
-source /required/bin/perl5/perlbrew/etc/bashrc
-#in order to use perlbrew
-
-PATH=$PATH:$HOME/bin
 export PATH
 

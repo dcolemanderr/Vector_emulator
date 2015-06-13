@@ -85,7 +85,7 @@ config.vm.synced_folder "/Users/colemanderr/repo/test-sci-linux-vm/required", "/
 config.vm.provision "shell", inline: <<-SHELL
 
 #replaces default .bash_profile loaded with vagrant ssh
-sudo mv ./required/.bash_profile ./
+sudo cp /home/vagrant/required/.bash_profile /home/vagrant/
 
 #makes all dependencies executable
 chmod -R 755 /home/vagrant/required/*
@@ -96,9 +96,17 @@ sudo yum install -y nano.x86_64
 
 ## PERL ##
 # Adds latest version of perlbrew and perl v5.18.4, takes a while.
-export PERLBREW_ROOT=./required/bin/
+#export PERLBREW_ROOT=/home/vagrant/required/perl5/perlbrew
 curl -L http://install.perlbrew.pl | bash
-source ./required/bin/perl5/perlbrew/etc/bashrc
+#sudo yum install -y perl-cpan
+#sudo cpan App::perlbrew
+#perlbrew init
+#sudo chown -R vagrant: /home/vagrant/required/perl5/perlbrew
+#source /home/vagrant/required/perl5/perlbrew/etc/bashrc
+source ~/perl5/perlbrew/etc/bashrc
+#sudo chown -R root: /home/vagrant/required/perl5/perlbrew
+#chmod 710 -R /home/vagrant/required/perl5/perlbrew
+#source /home/vagrant/required/bin/perlbrew/etc/bashrc
 perlbrew install perl-5.18.4
 perlbrew switch perl-5.18.4
 
@@ -122,7 +130,7 @@ sudo make install
 cd ~
 #rm libgtextutils-0.6.tar.bz2
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-#tar -xjf fastx_toolkit-0.0.12.tar.bz2 
+#tar -xjf fastx_toolkit-0.0.12.tar.bz2 ßß
 cd /home/vagrant/required/bin/fastx_toolkit-0.0.12
 ./configure
 make

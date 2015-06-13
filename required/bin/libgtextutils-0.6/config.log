@@ -27,8 +27,7 @@ uname -v = #1 SMP Thu Nov 21 13:35:52 CST 2013
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /root/perl5/perlbrew/bin
-PATH: /root/perl5/perlbrew/perls/perl-5.18.4/bin
+PATH: /home/vagrant/required/perl5/perlbrew/bin
 PATH: /usr/local/sbin
 PATH: /sbin
 PATH: /bin
